@@ -25,12 +25,12 @@ public class Main {
         System.out.println();
 
         System.out.println("Задача 2");
-        int num = arr.length;
         int max = arr[0];
         int min = arr[0];
+        /* цикл для визуальной проверки самого массива, в задаче этого не требуется
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i] + " ");
-        }
+        }   */
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] > max) max = arr[i];
             else if (arr[i] < min) min = arr[i];
@@ -40,8 +40,8 @@ public class Main {
         System.out.println();
 
         System.out.println("Задача 3");
-        double averageAmount = sum/arr.length;
-        System.out.println("Средняя сумма трат за месяц составила " + averageAmount + " рублей");
+        double averageAmount = (double)sum/arr.length;
+        System.out.printf("Средняя сумма трат за месяц составила %.2f руб", averageAmount);
         System.out.println();
 
         System.out.println("Задача 4");
